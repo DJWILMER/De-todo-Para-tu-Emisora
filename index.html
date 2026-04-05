@@ -442,7 +442,7 @@
 }</script>
 <script src="app.js" type="module"></script>
 <script src="sw.js"></script>
-<audio crossorigin="anonymous" id="radio" preload="none" src="https://stream.zeno.fm/wttrxavefwzuv">
+<audio crossorigin="anonymous" id="radio" preload="none" src="https://radios03.audiostreaming.ar:10438/stream ">
 </audio>
 <script>const radio = document.getElementById('radio');
 const playBtn = document.getElementById('floating-play-pause-btn');
@@ -513,7 +513,7 @@ icon.classList.add('fa-play');
 <i class="fab fa-facebook-f">
 </i>
 </a>
-<a class="social-icon twitter" href="https://api.whatsapp.com/send?phone=51984335569&text=%F0%9F%99%82" target="_blank">
+<a class="social-icon twitter" href="https://api.whatsapp.com/send?phone=5198634177&text=%F0%9F%99%82" target="_blank">
 <i class="fab fa-whatsapp">
 </i>
 </a>
@@ -550,7 +550,7 @@ alert("La función de compartir no está disponible en este navegador.");
 <ul style="list-style: none;padding: 0;width: 100%;display: flex;flex-direction: column;gap: 15px;margin-top: 40px">
 <li><a href="#" onclick="document.getElementById('sidebar-menu').style.transform='translateX(-100%)'" style="display: flex;align-items: center;gap: 10px;background-color: white;color: #007bff;font-weight: bold;border-radius: 30px;padding: 15px 20px;text-decoration: none;font-size: 16px"><i class="fas fa-home"></i> INICIO</a></li>
 <li><a href="https://wilmerdelgadocieza.blogspot.com/" style="display: flex;align-items: center;gap: 10px;background-color: white;color: #007bff;font-weight: bold;border-radius: 30px;padding: 15px 20px;text-decoration: none;font-size: 16px"><i class="fas fa-star"></i> VALORAR</a></li>
-<li><a href="https://api.whatsapp.com/send?phone=51984335569&text=%F0%9F%99%82" style="display: flex;align-items: center;gap: 10px;background-color: white;color: #007bff;font-weight: bold;border-radius: 30px;padding: 15px 20px;text-decoration: none;font-size: 16px"><i class="fas fa-shopping-bag"></i> PEDIDOS</a></li>
+<li><a href="https://api.whatsapp.com/send?phone=51980634177&text=%F0%9F%99%82" style="display: flex;align-items: center;gap: 10px;background-color: white;color: #007bff;font-weight: bold;border-radius: 30px;padding: 15px 20px;text-decoration: none;font-size: 16px"><i class="fas fa-shopping-bag"></i> PEDIDOS</a></li>
 <li><a href="javascript:void(0);" onclick="mostrarChat()" style="display: flex;align-items: center;gap: 10px;background-color: white;color: #007bff;font-weight: bold;border-radius: 30px;padding: 15px 20px;text-decoration: none;font-size: 16px"><i class="fas fa-comments"></i> CHAT</a></li>
 <li><a href="https://wilmerdelgadocieza.blogspot.com" style="display: flex;align-items: center;gap: 10px;background-color: white;color: #007bff;font-weight: bold;border-radius: 30px;padding: 15px 20px;text-decoration: none;font-size: 16px" target="_blank"><i class="fas fa-globe"></i>WEB</a></li>
 <li><a href="javascript:void(0);" onclick="mostrarPrivacidad()" style="display: flex;align-items: center;gap: 10px;background-color: white;color: #007bff;font-weight: bold;border-radius: 30px;padding: 15px 20px;text-decoration: none;font-size: 16px"><i class="fas fa-lock"></i> PRIVACIDAD</a></li>
@@ -598,7 +598,7 @@ input.value = "";
 <div id="privacy-section" style="display: none;position: fixed;top: 0;left: 0;width: 100%;height: 100%;background: white;color: black;z-index: 9998;padding: 20px;overflow-y: auto">
 <h2 style="margin-top: 20px;text-align: center">🔒 Políticas de Privacidad</h2>
 <div style="margin-top: 20px;max-width: 800px;margin-left: auto;margin-right: auto;font-size: 12px">
-<p><strong>Última actualización:</strong> Junio 2025</p>
+<p><strong>Última actualización:</strong> OCTUBRE 2026</p>
 <p>DJ Wilmer valora y respeta tu privacidad. Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos la información que tú nos proporcionas al utilizar nuestra aplicación y sitio web.</p>
 <h3>1. Información que recopilamos</h3>
 <p>Nuestra app y sitio web <strong>no recopilan información personal sensible</strong>. Sin embargo, podemos recopilar de forma automática datos básicos como:</p>
@@ -650,7 +650,7 @@ const stationLogo = document.getElementById("station-logo");
 const floatingLogo = document.getElementById("floating-logo");
 const stationInfo = document.getElementById("station-info");
 const metadataEl = document.getElementById("metadata");
-const evtSource = new EventSource("https://api.zeno.fm/mounts/metadata/subscribe/wttrxavefwzuv");
+const evtSource = new EventSource("https://radios03.audiostreaming.ar/cp/get_info.php?p=9128");
 evtSource.onmessage = async (e) => {
 try {
 const payload = JSON.parse(e.data);
