@@ -442,7 +442,7 @@
 }</script>
 <script src="app.js" type="module"></script>
 <script src="sw.js"></script>
-<audio crossorigin="anonymous" id="radio" preload="none" src="https://radios03.audiostreaming.ar:10438/stream ">
+<audio crossorigin="anonymous" id="radio" preload="none" src="https://radios03.audiostreaming.ar:10438/stream">
 </audio>
 <script>const radio = document.getElementById('radio');
 const playBtn = document.getElementById('floating-play-pause-btn');
@@ -650,7 +650,7 @@ const stationLogo = document.getElementById("station-logo");
 const floatingLogo = document.getElementById("floating-logo");
 const stationInfo = document.getElementById("station-info");
 const metadataEl = document.getElementById("metadata");
-const evtSource = new EventSource("https://radios03.audiostreaming.ar/cp/get_info.php?p=9128");
+const evtSource = new EventSource("https://free.miradio.pro/icy?url=https://radios03.audiostreaming.ar:10438/stream");
 evtSource.onmessage = async (e) => {
 try {
 const payload = JSON.parse(e.data);
